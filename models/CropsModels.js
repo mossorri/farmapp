@@ -72,13 +72,4 @@ const FarmerRecords = mongoose.model("FarmerRecords", recordSchema);
 
 module.exports = FarmerRecords;
 
-// name;
-// imageCrop;
-// typeOfCrop;
-// season;
-// landsize;
-// pesticdeNames;
-// amountInvested;
-// profitesMade;
-// fertilizers;
-// laboursWork;
+

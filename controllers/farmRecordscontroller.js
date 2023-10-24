@@ -1,7 +1,7 @@
 const Records = require("../models/CropsModels");
 const asyncHandler = require("express-async-handler");
 
-// get all product
+// get all records
 const getAllRecords = asyncHandler(async (req, res) => {
   try {
     const records = await Records.find({});
@@ -12,7 +12,7 @@ const getAllRecords = asyncHandler(async (req, res) => {
   }
 });
 
-// get a single product
+// get a single record
 const getRecord = asyncHandler(async (req, res) => {
   try {
     const { id } = req.params;
@@ -24,7 +24,7 @@ const getRecord = asyncHandler(async (req, res) => {
   }
 });
 
-// create a product
+// create a record
 const createRecord = asyncHandler(async (req, res) => {
   try {
     const newRecords = await Records.create(req.body);
@@ -35,7 +35,7 @@ const createRecord = asyncHandler(async (req, res) => {
   }
 });
 
-// update a product
+// update a record
 const updateRecord = asyncHandler(async (req, res) => {
   try {
     const { id } = req.params;

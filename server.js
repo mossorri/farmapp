@@ -19,20 +19,8 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-
-
-
-let CorsOptions = {
-  origin: FRONTEND,
-  optionsSuccessStatus: 200,
-};
-
-app.use(cors(CorsOptions));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
 // App Routes
-app.use("/api/records",recordRoute)
+app.use("/api/records", recordRoute);
 // app.use(errorMiddleware);
 
 app.get("/", (request, response) => {

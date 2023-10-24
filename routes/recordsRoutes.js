@@ -20,3 +20,4 @@ router.put("/:id", updateRecord);
 router.delete("/:id", deleteRecord);
 
 module.exports = router;
+
